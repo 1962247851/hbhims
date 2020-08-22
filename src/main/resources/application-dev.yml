@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://----.----.----.----:3306/hbhims_dev?useTimezone=true&serverTimezone=GMT%2B8
+    username: ----
+    password: ----
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+logging:
+  level:
+    root: info
+    com.example.hbhims: debug
+  file:
+    path: ./logs
+    name: hbhims_dev.log
